@@ -1,0 +1,1 @@
+/home/ecowan1/.config/omarchy/current/theme/neovim.lua
