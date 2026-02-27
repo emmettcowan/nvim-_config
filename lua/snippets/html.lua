@@ -51,4 +51,67 @@ return {
     i(1, "style.css"),
     t('" />'),
   }),
+
+  -- p tag
+  s("p", {
+    t("<p>"),
+    i(1, "text"),
+    t("</p>"),
+  }),
+
+  -- h1 tag
+  s("h1", {
+    t("<h1>"),
+    i(1, "text"),
+    t("</h1>"),
+  }),
+
+  -- a tag
+  s("a", {
+    t('<a href="'),
+    i(1, "#"),
+    t('">'),
+    i(2, "link"),
+    t("</a>"),
+  }),
+
+  -- img tag
+  s("img", {
+    t('<img src="'),
+    i(1, "img"),
+    t('" alt="'),
+    i(2, "alt"),
+    t('">'),
+  }),
+
+  -- form tag
+  s("form", {
+    t('<form action="'),
+    i(1, "#"),
+    t('" method="'),
+    i(2, "get"),
+    t('">'),
+    i(3),
+    t("</form>"),
+  }),
+
+  -- input tag
+  s("inp", {
+    t('<input type="'),
+    i(1, "text"),
+    t('" name="'),
+    i(2, "name"),
+    t('" value="'),
+    i(3, ""),
+    t('">'),
+  }),
+
+  -- button tag
+  s("btn", {
+    t('<button type="'),
+    i(1, "submit"),
+    t('">'),
+    i(2, "button"),
+    t("</button>"),
+  }),
 }
